@@ -112,6 +112,8 @@ class Universe:
         return subuniverse
         # first sublist of subuniverse has positions at distance 0 (the organism itself), second at distance 1, etc.
 
+            
+
 
 
 

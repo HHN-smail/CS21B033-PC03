@@ -100,7 +100,7 @@ class Insect(Position): #organism named as insect
                 possible_moves.pop(2)
             if self.y == Position.universe.n-1:
                 possible_moves.pop(0)
-            self.move(["N","S","E","W"][random.randint(0,3)])
+            self.move(possible_moves[random.randint(0,3)])
                 
 
 
@@ -119,6 +119,11 @@ class Insect(Position): #organism named as insect
 
         self.update_subuniverse_manhatten(Position.universe.get_subuniverse_manhatten(self.x,self.y, self.vision_distance))
         # Position.universe.update_universe(Insect(self.x,self.y,self.vision_distance, self.move_schema))
+
+
+    def move_towards_cartesian(self,j):
+        # j is position class
+        pass
     
 
 

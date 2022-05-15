@@ -23,6 +23,7 @@ class Tryout:
             if person1_response == 1:
                 self.person1.coin += 2
                 self.person2.coin += 2
+         
         else:
             if person1_response == -1:
                 # if person 1 cheats he gets 3 coins and person2 looses a coin
@@ -45,17 +46,16 @@ class Tryout:
 if __name__ == '__main__':
     allison = people.A("allison")
     brody = people.B("brody")
-    cameron = people.C("cameron")
+    carl = people.C("carl")
 
     tryout1 = Tryout(allison, brody)
     print(tryout1)
-    tryout2 = Tryout(brody, cameron)
+    tryout2 = Tryout(brody, carl)
     print(tryout2)
-    tryout3 = Tryout(cameron, allison)
+    tryout3 = Tryout(carl, allison)
     print(tryout3)
 
     # allison has 30 coins and brody has -10 coins
-    # brody has 10 coins and cameron has 20 coins
-    # cameron has 19 coins and allison has 33 coins
-    # being nice always works out :)
-
+    # brody has 10 coins and carl has 20 coins
+    # carl has 19 coins and allison has 33 coins
+# being nice never works out
